@@ -112,13 +112,23 @@ scanf("%d",n);
 ###break
 <kbd>break</kbd>简写为`b`,用于加断点,类似VS里面F9
 
-    break 7
-完成了在第7行加一断点
+要在第71行加一断点
 
-    info break
+    break 71
 用来查看断点,可简写为`i b`
 
-    delete 7
-删除第7行的断点
->`continue`命令执行程序，直到遇到断点才中断。
+    info break
+打印结果如：
+```
+(gdb) i b
+Num     Type           Disp Enb Address            What
+2       breakpoint     keep y   0x0000000000401334 in main() at 2225.cpp:71
+5       breakpoint     keep y   0x0000000000401345 in main() at 2225.cpp:72
+```
+
+    delete 2
+删除第71行的断点
+>delte后面跟的是断点的id，而不是行号
+
+<kbd>continue</kbd>命令简写为`c`，执行程序，直到遇到断点才中断。
 
