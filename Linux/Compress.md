@@ -38,3 +38,18 @@ tar命令的选项可以不加`-`，比如常用的`tar xvf *.tar.gz`
     tar -zcv -f abc.tar.gz abc/
 >因为f后面要紧跟文件名，所以最好将-f选项单独写出来，而不是组合使用
 
+##zip/unzip
+###zip
+    zip [-options] [-b path] [-t mmddyyyy] [-n suffixes] [zipfile list] [-xi list]
+最简单用法,zip+压缩后的文件名+要压缩的文件。如：
+    zip jdk-docs.zip jdk-doc/
+###unzip
+<kbd>unzip<kbd>直接跟文件名，就能解压文件到当前目录。
+    unzip jdk-docs.zip
+
+|常用选项|英文全称|描述
+|:------:|:------:|----|
+|d|directory|指定解压路径
+|n|never|从不覆盖已存在的文件
+|o|overwite|覆盖文件，不产生任何提示
+

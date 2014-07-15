@@ -1,5 +1,6 @@
-#软件
->注意！本文探讨的关于软件操作的命令属于`系统相关`的命令，仅适用于Debian系列衍生版。
+软件
+====
+注意！本文探讨的关于软件操作的命令属于`系统相关`的命令，仅适用于Debian系列衍生版。
 - [x] Debian
 - [x] Ubuntu
 - [ ] Red Hat
@@ -30,18 +31,26 @@ dpkg -p wps-office
 
     sudo aptitude wine1.6
 会自动解决依赖问题。
-##暴力卸载软件
+###暴力卸载软件
 如果温柔的卸载方式，不起作用的话，那么就来点暴力的，直接删除。
 
 1. 安装文件如果在/目录中，那么一般位置，就是/usr/local。
 2. 但是即使删除以后，在软件管理器中还会残留这个软件的图标，此时是无效链接了。
 3. 删除残留文件，残留文件一般在/usr/share中有其文件夹，在/usr/share/applications中有其图标。
 
-##查看文件最后修改时间
+##PPA
+Personal Package Archives，其实就是非官方的源
+###添加PPA
 
-    stat 文件名  
-##查看命令的所在位置
+    sudo add-apt-repository ppa:atareao/atareao
+`ppa:`后面的就是源了。
+###删除PPA
+1. 进入源目录删除
+ 
+    cd /etc/apt/sources.list.d/ 
+在里面找到对应的`.list`文件删除就可以了。
+2. 使用工具ppa-purge
 
-    which java
-    which adb
-可以显示java，adb的所在位置
+    sudo apt-get install ppa-purge
+    sudo ppa-purge ppa:/atareao/atareao
+这个工具也需要另外下载。同样的`ppa:`后面的就是源了。
