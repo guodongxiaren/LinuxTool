@@ -17,7 +17,7 @@ struct EdgeNode
     int w;     //权重
     int next;  //同起点的下一条边
 };
-EdgeNode Edges[n];
+EdgeNode Edges[m];
 ```
 
 >链式前向星并非专业术语。是网友的说法，但是在中国也比较流行。
