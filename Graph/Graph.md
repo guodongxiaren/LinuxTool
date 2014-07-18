@@ -6,7 +6,24 @@
 - 邻接表
 
 ##邻接表
-
+邻接表的数据结构分为三个部分
+```cpp
+//边结构
+struct EdgeNode
+{
+    int to;    //终点
+    int w;
+    EdgeNode *next;//指向下一条边的指针
+};
+//点结构
+struct VNode  
+{
+    int from;  //起点
+    EdgeNode *first;//指向下一条边的指针邻接表头指针
+};
+//整个图的邻接表
+Vnode Adjlist[maxn];
+```
 ###链式前向星
 链式前向星是邻接表的静态实现。
 ```cpp
