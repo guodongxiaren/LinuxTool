@@ -215,4 +215,14 @@ git add .只能添加当前目录及其子目录下新增或修改的文件，
 这个命令一定要加路径才行。要添加该目录树下所有新文件
 
     git add -A :/
+
+2014/07/23
+==========
+##克隆远端repository的时候，可以在后面加一个参数。如
+
+    git clone git@github.com:abc/hello.git hehe
+这样这个repo的所在的文件夹名称就变为了hehe，而不是默认的hello了。
+##删除远端的分支
+
+    git push origin --delete <分支名>
 注意空格。即使是在子目录中也能添加整个目录树的文件。

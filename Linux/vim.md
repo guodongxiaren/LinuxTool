@@ -148,4 +148,8 @@ Normal模式下，键入`v`进入`plain visual`模式
 ##block visual
 `Ctrl + v`进入`block visual`模式，该模式可以竖着选中一列或几列
 ##linewise visual
-
+***
+各种Tip
+=======
+##格式化文本
+Normal模式下：gg=G
