@@ -44,7 +44,7 @@ tar命令的选项可以不加`-`，比如常用的`tar xvf *.tar.gz`
 最简单用法,zip+压缩后的文件名+要压缩的文件。如：
     zip jdk-docs.zip jdk-doc/
 ###unzip
-<kbd>unzip<kbd>直接跟文件名，就能解压文件到当前目录。
+<kbd>unzip<kbd/>直接跟文件名，就能解压文件到当前目录。
     unzip jdk-docs.zip
 
 |常用选项|英文全称|描述
@@ -52,4 +52,14 @@ tar命令的选项可以不加`-`，比如常用的`tar xvf *.tar.gz`
 |d|directory|指定解压路径
 |n|never|从不覆盖已存在的文件
 |o|overwite|覆盖文件，不产生任何提示
+##rar
+格式
+
+    rar <命令选项> 压缩包名称 [要操作的文件]
+
+|常用选项|英文全称|描述
+|:------:|:------:|----|
+|a|add|给压缩包内添加文件|
+|d|delete|删除压缩包内某文件|
+|e|extract|提取文件到当前目录，不创建新目录|
 
