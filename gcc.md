@@ -71,14 +71,8 @@ gcc编译器学习记录
     gcc -o p2 main2.c ./libvector.so
 完成了生成.so以及链接.so的操作。<kbd>-fPIC</kbd>指示生成与位置无关的代码。
 
+##使用c99标准编译
+默认的情况下，编译器是以c89的标准编译的。使用c99则：
 
-
-
-
-
-
-
-
-
-
+    gcc -std=c99 hello.c
 
