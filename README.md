@@ -11,7 +11,8 @@ README
 |[gcc](./gcc.md)|GNU/Linux下C语言编译器|
 |[gdb](./gdb.md)|GNU/Linux下C语言调试器|
 |[grep](./grep.md)|常用支持正则表达式的搜索工具|
-|[vim](./vim.md)|Unix/Linux下强大的编辑器|
+|[MySQL](mysql.md)|强大的开源跨平台数据库|
+|[Vim](./vim.md)|Unix/Linux下强大的编辑器|
 |[文本](./Text.md)|文本处理相关工具和命令介绍|
 |[软件](./Software.md.md)|Ubuntu下软件相关的命令介绍|
 |[文件](./File.md)|Ubuntu下文件操作的命令介绍|
