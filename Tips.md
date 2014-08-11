@@ -32,5 +32,19 @@ root是Linux下最高权限的用户，类似Windows下的管理员administer。
 可以查看`ls`命令的用法。
 ###Linux下的info
 man是Unix系统的产物，而Linux也提供了自己的解决方案 <kbd>info</kbd>。
+info中带星号的行，按回车可以跳进新的页面，按shift+u返回。
+>原先info要优秀与man，但近代以来差异已经不大。info逐渐没落，极少更新。
+建议使用man
+
+###tldp.org
+The Linux Document Project
+-------------
+一个Howto网站。
+###doc 
+查看 `/usr/share/doc/`
+###百度谷歌
+    内事不决问百度，外事不决问谷歌
+如果找不到中文资料，那么要去谷歌找英文资料，谷歌比百度要强大丰富的多。
+不过需要搜索英文。
 
 
