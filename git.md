@@ -226,3 +226,9 @@ git add .只能添加当前目录及其子目录下新增或修改的文件，
 
     git push origin --delete <分支名>
 注意空格。即使是在子目录中也能添加整个目录树的文件。
+2014/08/11
+==========
+设置默认追踪分支
+
+    git branch --set-upstream-to=origin/<branch> master
+这样就可以直接`git pull`了，而不用指定远端和分支。
