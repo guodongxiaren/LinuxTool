@@ -18,15 +18,18 @@ ubuntu/red hat下都是在`/etc/samba/smb.conf`。
 |[sharefiles]|设置文件共享|
 
 ####global
-* workgroup 指定工作组或域
-* server string 描述
-* security 指定安全模式
-  * share 无权限验证
-  * user 缺省，推荐，由Linux Samba服务器验证
-  * server 较少使用。第三方主机验证
-  * domain 较少使用。第三方主机验证（第三方必须是Windows的域控制器）
-* hosts allow 限定主机访问
-* log file 指定日志文件存放位置
-* max log size 指定日志文件大小
+* **workgroup** 指定工作组或域
+* **server string** 描述
+* **security** 指定安全模式
+  * **share** 无权限验证
+  * **user** 缺省，推荐，由Linux Samba服务器验证
+  * **server** 较少使用。第三方主机验证
+  * **domain** 较少使用。第三方主机验证（第三方必须是Windows的域控制器）
+* **hosts allow** 限定主机访问
+* **log file** 指定日志文件存放位置
+* **max log size** 指定日志文件大小
 
+hosts allow 只需指定网段，不需要主机名。
+
+    hosts allow = 127. 192.168.12. 192.168.13.
 
