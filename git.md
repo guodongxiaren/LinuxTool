@@ -10,7 +10,7 @@ Today I can use git in Linux.
 ---
 ###ssh
 ```bash
-ssh -keygen -t rsa -C "your@email.com"
+ssh-keygen -t rsa -C "your@email.com"
 ```
 * -t  Type 指的是加密算法的类型，后面跟得是rsa
 * -C  comment 注释，一般是使用你的邮箱地址
