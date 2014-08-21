@@ -38,15 +38,15 @@ cd是change directory的缩写
     cd ..
     cd -
 
->直接`cd`不加参数也相当于执行了`cd ～`，这是进入home的快捷方式
+>直接`cd`不加参数也相当于执行了`cd ～`，这是进入宿主目录的快捷方式
 
 ##cp
 复制文件。
 复制目录时要加上-r或-a选项。
+
     cp -r test/ test2/
     cp -a test/ test2/
 此时若不存在目录test2，那么会新建。
-
 ##ls
 
 `ls`为list的意思。可以列出当前目录的各种信息。
@@ -92,6 +92,18 @@ cd是change directory的缩写
 
 mode即为`r`、`w`、`x`
 也可以使用`chmod 数字`来改权限。
+##chown
+改变文件所有者
+
+    chown guodong a.c
+    chown guodong.guodong a.c
+    chown guodong:guodong a.c
+改变所有者，第二个第三个改变所有者及所有组。
+###选项
+- [x] h
+默认情况下，修改符号链接的所有者，实际是在修改它所引用的文件。
+**-h**选项就会指定修改的是符号链接而非所引用的文件。
+
 ##mv
 `mv`为move的意思。
 
