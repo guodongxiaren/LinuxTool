@@ -157,4 +157,6 @@ link分为两种符号链接和硬链接
 
     which java
     which adb
-可以显示java，adb的所在位置
+    type java
+which可以显示java，adb的所在位置
+type可以显示是shell的内部命令还是外部命令。外部命令会指出所在位置。
