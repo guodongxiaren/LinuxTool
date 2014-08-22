@@ -52,7 +52,14 @@ gcc编译器学习记录
 `O`是<kbd>Optimize</kbd>之意。同样还有`O1`，但是优化效果不如`O2`
 
 ##Link
+    gcc -o temp temp.c -lm
+**-lm**选项是链接math.h的库。常用的库会自动链接，无需指定。
+>数学库的文件可能位*libm-2.1.2.so*去掉lib和后面的版本号就只剩下m了。
 
+如果该库不在系统缺省路径下，还要使用**-L**选项指定。
+    
+    -L/home/jelly/mylib
+系统缺省的库路径为：/lib、/usr/lib、/usr/local/lib。
 ###静态链接库
 静态链接库是后缀名为.a的文件。它有多个后缀为你.o的目标文件组成。
 
