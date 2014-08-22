@@ -99,6 +99,8 @@ mode即为`r`、`w`、`x`
     chown guodong.guodong a.c
     chown guodong:guodong a.c
 改变所有者，第二个第三个改变所有者及所有组。
+>另外有命令**chgrp**用来修改文件所有组。
+
 ###选项
 - [x] h
 
