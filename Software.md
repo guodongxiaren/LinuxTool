@@ -45,6 +45,9 @@ Personal Package Archives，其实就是非官方的源
     sudo add-apt-repository ppa:atareao/atareao
 `ppa:`后面的就是源了。
 ###删除PPA
+    sudo add-apt-repository -r ppa:atareao/atareao
+
+###删除PPA
 1. 进入源目录删除
  
     cd /etc/apt/sources.list.d/ 
