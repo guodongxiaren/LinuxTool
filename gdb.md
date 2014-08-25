@@ -131,4 +131,9 @@ Num     Type           Disp Enb Address            What
 >delte后面跟的是断点的id，而不是行号
 
 <kbd>continue</kbd>命令简写为`c`，执行程序，直到遇到断点才中断。
+##set
+<kbd>set</kbd>可以在调试过程中设置变量的值。  
+特别值得一提的是，如果用gdb调试main的参数需要在一开始这么写：
 
+    set args 参数...
+然后再执行start语句开始调试。
