@@ -236,3 +236,7 @@ git add .只能添加当前目录及其子目录下新增或修改的文件，
 使用SSH协议可以避免每次`push`输入密码。前提是在账户里配置好SSH秘钥。
 git@github.com开头的就是SSH协议。
 使用Https协议则会导致每次都会输入用户名和密码。
+2014/08/31
+==========
+    git config --global credential.helper store
+https协议记住密码的命令。
