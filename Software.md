@@ -57,3 +57,6 @@ Personal Package Archives，其实就是非官方的源
     sudo apt-get install ppa-purge
     sudo ppa-purge ppa:/atareao/atareao
 这个工具也需要另外下载。同样的`ppa:`后面的就是源了。
+###出现依赖问题的解决办法
+    sudo apt-get -f install
+将自动安装依赖文件及要安装的软件
