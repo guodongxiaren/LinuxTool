@@ -11,6 +11,13 @@ Linux系统中常见的压缩文件格式(后缀名)有gz、bz、zip、rar和Z�
 gzip全称GNU zip。最简单的用法就是gzip直接跟文件名，用来压缩。
     gzip test.sh
 这样会生成test.sh.gz的文件。但是原文件会消失。加上`-k`选项则会保留原文件
+
+|选项|英文释义|描述|
+|----|----|----
+|d|decompress|解压
+|r|recursive|压缩目录
+另有`gunzip`可以用于解压.gz的文件，效果同gzip -d。注意：   
+gzip -d foo 可以解压foo.gz文件
 ###zcat
 zcat可以在不解压`*.gz`文件的情况下，打印压缩文件的内容到屏幕。
 ##bzip2
