@@ -34,6 +34,7 @@ tar命令的选项可以不加`-`，比如常用的`tar xvf *.tar.gz`
 |C|change DIR|指定解压路径|
 |f|file|指定文件名，f后要紧跟文件名|
 |j||利用bzip2来压缩|
+|J||利用xz来压缩|
 |p|permissions|保留原文件的权限和属性|
 |v|verbose|显示正在压缩/解压的文件|
 |x|extract|解压缩|
@@ -45,6 +46,19 @@ tar命令的选项可以不加`-`，比如常用的`tar xvf *.tar.gz`
     tar -zcv -f abc.tar.gz abc/
 >因为f后面要紧跟文件名，所以最好将-f选项单独写出来，而不是组合使用
 
+##xz
+xz是linux上最有效的压缩功能，现在被用来储存Linux内核文件。    
+它压缩速度慢，但是提供更高的压缩率。    
+|命令|描述|
+|----|----|
+|xz _*_|压缩当前目录下所有文件，缀以.xz，不打包|
+|xz foo|压缩foo文件为foo.xz，如果成功，会删除foo文件|
+
+|选项|全命令|描述|
+|----|----|
+|c|stdout|解压（非）压缩文件到标准输出|
+|d|decompress|解压.xz文件，默认替换掉压缩文件|
+|k|keep|解压之后不删除原文件|
 ##zip/unzip
 ###zip
     zip [-options] [-b path] [-t mmddyyyy] [-n suffixes] [zipfile list] [-xi list]
