@@ -66,7 +66,7 @@ xz是linux上最有效的压缩功能，现在被用来储存Linux内核文件�
 最简单用法,zip+压缩后的文件名+要压缩的文件。如：
     zip jdk-docs.zip jdk-doc/
 ###unzip
-<kbd>unzip<kbd/>直接跟文件名，就能解压文件到当前目录。
+<kbd>unzip<kbd/> 直接跟文件名，就能解压文件到当前目录。
     unzip jdk-docs.zip
 
 |常用选项|英文全称|描述
