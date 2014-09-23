@@ -26,11 +26,18 @@ root是Linux下最高权限的用户，类似Windows下的管理员administer。
 ###Ctrl相关
 |组合键|描述|
 |------|-----
-|Ctrl+Z|暂停当前程序，丢入后台运行
-|Ctrl+C|终止当前程序
-|Ctrl+D|退出当前用户的终端登录
+|Ctrl+Z|发送susp信号，暂停当前程序，丢入后台运行
+|Ctrl+C|发送intr信号终止当前程序
+|Ctrl+D|发送EOF信号
+|Ctrl+H|删除光标前一个字符
+|Ctrl+W|删除光标前一个单词
+|Ctrl+U|删除光标前该行所有内容
+|Ctrl+X|在行首和行尾之间切换光标
 |Ctrl+R|搜索历史命令
->上述为Ubuntu终端的组合键，其他系统还支持Ctrl+S和Ctrl+Q
+|Ctrl+S|发送stop信号，暂停屏幕输出
+|Ctrl+Q|发送start信号，恢复屏幕输出
+>所有的Ctrl键都可以通过键入^字符来代替。
+>Ctrl+S只是暂停输出，但并不暂停程序运行
 
 ##授人以渔
 高手是善于寻找帮助的人
