@@ -1,4 +1,3 @@
-
 Today I can use git in Linux.
 ================
 |![](http://git-scm.com/images/logo@2x.png)|Git命令还是很有必要学的，很强大的说。原来在Windows上面直接使用GUI 的GitHub，导致对于Git命令很不熟悉。在Linux下，使用命令行才是王道，感觉Git和Shell的命令无缝集成，毫无违和。
@@ -240,3 +239,17 @@ git@github.com开头的就是SSH协议。
 ==========
     git config --global credential.helper store
 https协议记住密码的命令。
+2014/09/14
+==========
+##查询man手册
+查看man手册的git命令时，比如查询git diff要使用man git-diff。
+##git ls-files
+可以显示在Git管理范围内的文件。
+##git diff
+比较差别。但是只能显示已经在Git范围内的文件，新建而未添加的文件不显示差别。  
+*注意*，git diff显示的是“缓存区”(staging area)和工作区之间的差别。  
+也就是说，当我把改动的文件add之后，缓存区与工作区就一致了，使用git diff就会没有反应。
+####git diff HEAD
+用以显示最新提交(commit)和当前工作区的差别。包括已更改但尚未add的改动。
+####git diff --cahced
+用以显示最新提交和缓存区的差别。包括已add但尚未commit的改动。
