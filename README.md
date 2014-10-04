@@ -12,6 +12,7 @@ Weapon
 |[gcc](gcc.md)|GNU/Linux下C语言编译器|
 |[gdb](gdb.md)|GNU/Linux下C语言调试器|
 |[grep](grep.md)|常用支持正则表达式的搜索工具|
+|[hexdump](hexdump.md)|十六进制查看器|
 |[MySQL](mysql.md)|强大的开源跨平台数据库|
 |[sed](sed.md)|Stream Editer常用文本处理工具|
 |[Vim](vim.md)|Unix/Linux下强大的编辑器|
