@@ -136,4 +136,5 @@ Num     Type           Disp Enb Address            What
 特别值得一提的是，如果用gdb调试main的参数需要在一开始这么写：
 
     set args 参数...
-然后再执行start语句开始调试。
+然后再执行start语句开始调试。    
+程序名（*argv[1]*）无需设置到set args里面
