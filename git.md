@@ -253,3 +253,21 @@ https协议记住密码的命令。
 用以显示最新提交(commit)和当前工作区的差别。包括已更改但尚未add的改动。
 ####git diff --cahced
 用以显示最新提交和缓存区的差别。包括已add但尚未commit的改动。
+2014/10/11
+==========
+##撤销暂存的文件
+暂存，就是已经add但未commit的文件。   
+    
+    git reset HEAD
+恢复所有add文件为未暂存的状态。
+也可以使用上面语句加上单个文件名，来恢复单个文件。
+##撤销commit的文件
+先用git log查看每个版本的hash值  
+使用下面语句恢复到特定版本
+   
+    git reset --hard hash值
+hash值也可以用HEAD代替。    
+HEAD^代表上一次commit前的版本。HEAD^^代表上上次commit前的版本，以此类推。     
+注意，这时已经暂存但未commit的文件，将消失。
+##删除所有未被跟踪的文件
+    git clean -df
