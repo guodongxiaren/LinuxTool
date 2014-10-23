@@ -1,0 +1,9 @@
+ftp
+====
+##连接ftp服务器
+ftp加ip地址。
+##ftp命令提示符
+###open
+open加ip地址，建立一个ftp链接
+##bye
+退出ftp命令提示符
