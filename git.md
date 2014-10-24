@@ -267,8 +267,9 @@ https协议记住密码的命令。
    
     git reset --hard hash值
 hash值也可以用HEAD代替。    
-HEAD^代表上一次commit前的版本。HEAD^^代表上上次commit前的版本，以此类推。     
-注意，这时已经暂存但未commit的文件，将消失。
+HEAD^代表上一次commit前的版本。     
+注意，这时已经暂存但未commit的文件，将消失。在上次版本之后出现的文件，也将消失。    
+HEAD^^代表上上次commit前的版本，以此类推。
 ##删除所有未被跟踪的文件
     git clean -df
 
