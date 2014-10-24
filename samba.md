@@ -3,7 +3,8 @@ samba服务器
 基于SMB协议，最初不可路由（只能用于局域网），近年来可以用于互联网，但很少这样用。
 >我称之为`桑巴`。
 
-##smb.conf文件
+smb.conf文件
+------------
 ubuntu/red hat下都是在`/etc/samba/smb.conf`。
 其他发行版位置可能不同，但都叫做`smb.conf`。
 ###注释
@@ -33,3 +34,16 @@ hosts allow 只需指定网段，不需要主机名。
 
     hosts allow = 127. 192.168.12. 192.168.13.
 
+smbclient
+---------
+    smbclient //192.168.1.107/share -U jelly
+上面IP是局域网内的Windows主机的地址。share是该主机上的共享文件夹。jelly是该主机上的用户。    
+命令成功后，将出现一个smb命令提示符的界面。可以用help查看支持的命令。
+在这里没我们可以进行创建文件等等操作，所有所做都作用在share文件夹中。
+
+smbpasswd
+---------
+|选项|描述|
+|-----|----|
+|a|添加用户到smbpasswd文件
+|x|删除用户
