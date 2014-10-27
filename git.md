@@ -251,7 +251,7 @@ https协议记住密码的命令。
 也就是说，当我把改动的文件add之后，缓存区与工作区就一致了，使用git diff就会没有反应。
 ####git diff HEAD
 用以显示最新提交(commit)和当前工作区的差别。包括已更改但尚未add的改动。
-####git diff --cahced
+####git diff --cached
 用以显示最新提交和缓存区的差别。包括已add但尚未commit的改动。
 2014/10/11
 ==========
