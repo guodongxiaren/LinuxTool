@@ -16,10 +16,22 @@ Weapon
 |[sed](sed.md)|Stream Editer常用文本处理工具|
 |[Vim](vim.md)|Unix/Linux下强大的编辑器|
 |[文本](Text.md)|文本处理相关工具和命令介绍|
-|[软件](Software.md.md)|Ubuntu下软件相关的命令介绍|
 |[文件](File.md)|Ubuntu下文件操作的命令介绍|
 |[系统](System.md)|Linux系统，磁盘管理相关介绍|
 |[压缩](Compress.md)|压缩，解压及打包的工具命令介绍|
 
+##软件包管理
+- [x] Debian/Ubuntu系列
+* [APT](APT.md)
+* [dpkg](dpkg)
+- [x] Red Hat/CentOS系列
+* [Yum](Yum.md)
+* [rpm](rpm.md)
+
 ##过滤器
+##各种服务
+|名称|描述
+|----|----
+|samba|Linux与Windows通信服务
+|ftp|ftp命令
 [各种Tip](Tips.md)
