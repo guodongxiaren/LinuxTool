@@ -36,7 +36,7 @@ Weapon
 |[ssh](ssh)|ssh有关的工具和命令
 
 ##过滤器
--[x] 基本操作
+- [x] 基本操作
 * cat
 * tac
 * split
