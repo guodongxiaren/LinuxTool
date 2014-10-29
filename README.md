@@ -28,10 +28,47 @@ Weapon
 * [Yum](Yum.md)
 * [rpm](rpm.md)
 
-##过滤器
 ##各种服务
 |名称|描述
 |----|----
-|samba|Linux与Windows通信服务
-|ftp|ftp命令
+|[ftp](ftp)|ftp命令
+|[samba](samba)|Linux与Windows通信服务
+|[ssh](ssh)|ssh有关的工具和命令
+
+##过滤器
+-[x] 基本操作
+* cat
+* tac
+* split
+* rev
+* head
+* tail
+* colrm
+- [x] 比较
+* cmp
+* comm
+* diff
+* sdiff
+- [x] 抽取
+* cut
+* paste
+- [x] 格式化
+* nl
+* wc
+* expand
+* unexpand
+* fold
+* fmt
+* pr
+- [x] 其他
+* [grep](grep.md)
+* [sed](sed.md)
+* look
+* uniq
+* join
+* sort
+* tsort
+* strings
+* tr
+
 [各种Tip](Tips.md)
