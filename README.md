@@ -32,6 +32,8 @@ Weapon
 ##各种服务
 |名称|描述
 |----|----
-|samba|Linux与Windows通信服务
-|ftp|ftp命令
+|[ftp](ftp)|ftp命令
+|[samba](samba)|Linux与Windows通信服务
+|[ssh](ssh)|ssh有关的工具和命令
+
 [各种Tip](Tips.md)
