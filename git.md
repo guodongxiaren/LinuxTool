@@ -286,3 +286,12 @@ Git2.0版本，git add命令有了改动。使用如下命令进行设置：
 
     git commit --amend
 把文件添加到缓存区后，再执行上述命令。可以补充到上一次的commit。
+2014/11/01
+=========
+一个错误的解决方案：  
+今天在CentOS上，git push的时候遇到一个问题：
+
+	error: The requested URL returned error: 403 Forbidden while accessing https://....
+我的remote地址使用的https协议。百度到的解决方案是：  
+把config文件中的url改为https://用户名@github.com/... 的形式。然后再push的时候就会直接提示输入密码。
+
