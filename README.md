@@ -31,6 +31,7 @@ Weapon
 ##各种服务
 |名称|描述
 |----|----
+|[chkconfig]|设置系统各种服务
 |[ftp](ftp)|ftp命令
 |[samba](samba)|Linux与Windows通信服务
 |[ssh](ssh)|ssh有关的工具和命令
