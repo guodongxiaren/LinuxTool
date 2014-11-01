@@ -1,7 +1,6 @@
 Today I can use git in Linux.
 ================
-|![](http://git-scm.com/images/logo@2x.png)|Git命令还是很有必要学的，很强大的说。原来在Windows上面直接使用GUI 的GitHub，导致对于Git命令很不熟悉。  
-在Linux下，使用命令行才是王道，感觉Git和Shell的命令无缝集成，毫无违和。
+|![](http://git-scm.com/images/logo@2x.png)|抛弃GUI，在Linux下，使用命令行才是王道。
 |-----|:--------|
 
 2014/04/30
