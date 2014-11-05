@@ -29,9 +29,10 @@ root是Linux下最高权限的用户，类似Windows下的管理员administer。
 |Ctrl+Z|发送susp信号，暂停当前程序，丢入后台运行
 |Ctrl+C|发送intr信号终止当前程序
 |Ctrl+D|发送EOF信号
-|Ctrl+H|删除光标前一个字符
-|Ctrl+W|删除光标前一个单词
-|Ctrl+U|删除光标前该行所有内容
+|Ctrl+L|清屏
+|Ctrl+H|erase信号，删除光标前一个字符
+|Ctrl+W|werase信号，删除光标前一个单词
+|Ctrl+U|kill信号，删除光标前该行所有内容
 |Ctrl+X|在行首和行尾之间切换光标
 |Ctrl+R|搜索历史命令
 |Ctrl+S|发送stop信号，暂停屏幕输出
