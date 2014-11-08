@@ -295,3 +295,9 @@ Git2.0版本，git add命令有了改动。使用如下命令进行设置：
 我的remote地址使用的https协议。百度到的解决方案是：  
 把config文件中的url改为https://用户名@github.com/... 的形式。然后再push的时候就会直接提示输入密码。
 
+2014/11/08
+==========
+设置本地分支默认跟踪的远程分支
+
+    git branch --set-upstream-to=origin/django django
+origin后面的django指的是远程分支，最后一个参数django是本地分支。
