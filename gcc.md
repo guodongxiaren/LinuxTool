@@ -83,3 +83,7 @@ gcc编译器学习记录
 
     gcc -std=c99 hello.c
 
+##包含非系统的头文件
+`-I`选项指定头文件的位置。一般和L选项联用。比如：  
+
+    gcc mysql_test.c -I /usr/local/include/mysql -L/usr/local/lib -lmysqlclient -o test
