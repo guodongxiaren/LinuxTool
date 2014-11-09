@@ -5,3 +5,5 @@ RedHat系列软件包管理器Yum
     yum install 软件名
 
 支持*。
+##列出已安装或可用软件包
+    yum list

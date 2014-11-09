@@ -40,3 +40,5 @@ main:$(objects)
 main:main.o getdata.o calc.o putdata.o
     gcc -o $@ $^
 ```
+##通配符
+支持Unix常用的三个通配符：`*`,`?`,`[]`
