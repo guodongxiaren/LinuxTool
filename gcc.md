@@ -87,3 +87,8 @@ gcc编译器学习记录
 `-I`选项指定头文件的位置。一般和L选项联用。比如：  
 
     gcc mysql_test.c -I /usr/local/include/mysql -L/usr/local/lib -lmysqlclient -o test
+    
+##-M检查所需的头文件
+    gcc -M main.c
+会列出所有包含的所有头文件。包括头文件中包含的头文件。并且会列出标准库的头文件。
+如果不想显示标准库的头文件，请使用`-MM`参数。
