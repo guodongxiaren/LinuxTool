@@ -301,3 +301,10 @@ Git2.0版本，git add命令有了改动。使用如下命令进行设置：
 
     git branch --set-upstream-to=origin/django django
 origin后面的django指的是远程分支，最后一个参数django是本地分支。
+
+2014/11/17
+==========
+不再跟踪某一文件。
+
+    git rm [-r] --cached .classpath
+.classpath为文件名
