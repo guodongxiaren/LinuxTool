@@ -66,20 +66,38 @@ sudo !!
 ###!n
 使用!n执行第n个命令。
 n可以是负数，即倒数第几个命令
-###!#
+###`!#`
 单独的`!#`是引用当前行。引用上一个命令的参数。  
 !#:n 应用当前行的第n个参数。
 ###!:
 引用上一个命令的参数。参数索引从0算起。
 ```
+#引用上一个命令的第0个参数（实际上是引用命令）
+!:0
 #引用上一个命令的第2个参数
-!:2
+[root@localhost ~]#mv test Test
+[root@localhost ~]#echo !:2
+echo Test   ( 命令回显)
+Test
 #引用上一个命令的第1到3个参数
 !:1-3
 #引用上一个命令的第2个参数开始的所有参数
 !:2*
 #引用上一个命令的所有参数
 !*
+```
+###!^和!$
+```
+#引用上一个命令的第一个参数
+[root@localhost ~]# mv Test/ test/
+[root@localhost ~]# echo !^
+echo Test/
+Test/
+#引用上一个命令的最后一个参数
+[root@localhost ~]# mv Test/ test/
+[root@localhost ~]# echo !$
+echo test/
+test/
 ```
 ###:选取
 需要配合历史命令,一起工作。比如`!$:r`:  
