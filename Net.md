@@ -15,3 +15,17 @@
     ifconfig eth0:1 192.168.2.3
 `eth0:1`为虚拟网卡名，接着可以`:2`,`:3`...
 
+##chkconfig
+Ubuntu的启动机制Upstart是没有chkconfig的，只有包含SysV中init启动机制的系统才有chkconfig
+###列出所有开机自启的服务
+    chkconfig --list
+###在自启动列表中添加/删除服务
+    chkconfig --add NAME
+    chkconfig --del NAME
+NAME指的是服务的名称
+##traceroute
+检查到达某一主机中间所经过的主机。默认为udp包。  Windows上类似的命令叫做tracert
+`traceroute www.baidu.com`
+##-I
+发送icmp报文。有时候，如果使用了路由器，会导致udp包的响应功能消失。从而显示星号。
+此时可以使用-I选项（或-T，不过有时候-T不管用）
