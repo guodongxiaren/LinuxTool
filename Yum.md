@@ -11,3 +11,5 @@ RedHat系列软件包管理器Yum
     yum repolist all
 
 软件源即repository server（仓库服务器）。在`/etc/yum.repos.d/`下面
+##搜索软件、命令所在的软件包
+    yum search 名称
