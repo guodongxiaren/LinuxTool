@@ -7,3 +7,7 @@ RedHat系列软件包管理器Yum
 支持*。
 ##列出已安装或可用软件包
     yum list
+##查看yum软件源
+    yum repolist all
+
+软件源即repository server（仓库服务器）。在`/etc/yum.repos.d/`下面
