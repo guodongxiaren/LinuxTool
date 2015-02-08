@@ -18,6 +18,7 @@ Weapon
 |[adb](adb.md)|跨平台安卓手机管理调试工具|
 |[awk](awk.md)|与sed齐名
 |[bc](bc.md)|支持浮点运算及其他功能的高级计算器|
+|[fdisk](fdisk.md)|硬盘分区工具
 |[gcc](gcc.md)|GNU/Linux下C语言编译器|
 |[gdb](gdb.md)|GNU/Linux下C语言调试器|
 |[git](git.md)|我个人的git命令学习日志
@@ -30,12 +31,14 @@ Weapon
 |[Vim](vim.md)|Unix/Linux下强大的编辑器|
 
 ##软件包管理
-- [x] Debian/Ubuntu系列
+- [x] Debian/Ubuntu
 * [APT](APT.md)
 * [dpkg](dpkg)
-- [x] Red Hat/CentOS系列
+- [x] Red Hat/CentOS
 * [Yum](Yum.md)
 * [rpm](rpm.md)
+- [x] Arch Linux
+* [pacman](pacman.md)
 
 ##网络服务相关
 |名称|描述
