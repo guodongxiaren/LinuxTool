@@ -13,3 +13,7 @@ RedHat系列软件包管理器Yum
 软件源即repository server（仓库服务器）。在`/etc/yum.repos.d/`下面
 ##搜索软件、命令所在的软件包
     yum search 名称
+##生成缓存
+    yum clean
+    yum makecache
+每次修改了yum源之后可以调用，这两个命令生成新的缓存
