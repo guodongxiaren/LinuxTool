@@ -50,8 +50,14 @@ gcc编译器学习记录
     gcc -O2 hello.c -o hello
     
 `O`是<kbd>Optimize</kbd>之意。同样还有`O1`，但是优化效果不如`O2`
+###-E
+gcc -E 指示gcc对源代码进行预处理，结果直接输出到终端。
+###-I
+包含自定义头文件的路径
+###-S
+生成汇编代码
 
-##Link
+##链接
     gcc -o temp temp.c -lm
 **-lm**选项是链接math.h的库。常用的库会自动链接，无需指定。
 >数学库的文件可能位*libm-2.1.2.so*去掉lib和后面的版本号就只剩下m了。
