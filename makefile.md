@@ -24,7 +24,7 @@ main:main.o getdata.o calc.o putdata.o
 即只能显式调用。
 用法如：
 ```
-.PHONY clean
+.PHONY:clean
 clean:
     rm *.o
     rm main
