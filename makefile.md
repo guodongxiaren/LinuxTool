@@ -149,4 +149,18 @@ gcc a.c -o a
 返回`lose`
 ###strip
 一元函数，去除字符串首尾空格。
-###
+###foreach
+三元函数，类似其他语言中的foreach循环。格式如：
+
+	$(foreach 迭代子,迭代对象,循环体操作)
+举例：
+```makefile
+	//以下代码节选自“蘑菇街”IM服务器项目
+	$(foreach d,$(SRCDIRS),$(wildcard $(addprefix $(d)/*,$(SRCEXTS))))
+```
+可以理解成java的类似语句
+```java
+	for(d:SRCDIRS){
+		wildcard(addprefix(d,SRCEXTS));
+	}
+```
