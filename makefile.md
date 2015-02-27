@@ -154,7 +154,7 @@ gcc a.c -o a
 
 	$(foreach 迭代子,迭代对象,循环体操作)
 举例：
-```makefile
+```
 	//以下代码节选自“蘑菇街”IM服务器项目
 	$(foreach d,$(SRCDIRS),$(wildcard $(addprefix $(d)/*,$(SRCEXTS))))
 ```
