@@ -181,8 +181,12 @@ Normal模式下，键入`V`进入`linewise visual`模式
 各种Tip
 =======
 ##格式化文本
-Normal模式下：gg=G
+Normal模式下：`gg=G`
 ##录制宏
 1. Normal模式下，按q+寄存器名开始录制,比如：`qa`
 2. 再次按q结束录制。
 3. 使用@+寄存器名执行该宏，比如：`@a`
+
+##显示TAB
+Normal模式下:`set list`  
+然后TAB会显示成`^I`，并且行尾会显示`$`，从而看出行尾空格。
