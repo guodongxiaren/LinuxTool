@@ -321,3 +321,15 @@ origin后面的django指的是远程分支，最后一个参数django是本地�
     git push -u origin test
 上面命令将当前本地分支，推送到远端的test分支，并建立关联。
 远端若无test分支，则会自动创建
+2015/03/05
+==========
+源码编译git。遇到了一些问题，主要是依赖没安装完整（也能编译成功，但是缺少功能）。
+
+要安装的依赖是：
+- zlib
+- libcurl
+- expat
+- openssl
+- ascilldoc
+
+把这些源码下载下来编译好，就行了。
