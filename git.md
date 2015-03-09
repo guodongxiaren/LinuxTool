@@ -327,9 +327,12 @@ origin后面的django指的是远程分支，最后一个参数django是本地�
 
 要安装的依赖是：
 - zlib
-- libcurl
+- openssl(--shared和-fPIC选项)
+- libcurl（--with-ssl）
 - expat
-- openssl
 - ascilldoc
 
-把这些源码下载下来编译好，就行了。
+把这些源码下载下来编译好，就行了。  
+要注意的是openssl要先于libcurl编译，因为libcurl在configure阶段需要开启`--with-ssl`选项来指明openssl的路径，否则就无法支持很好地https协议（git pull失败）。
+
+另外openssl的configure阶段要使用`--shared -fPIC`选项使编译生成动态库（`.so`，默认是静态库`.a`），这样才能被libcurl调用。如果之前已经生成过静态库了，重新编译之前要`sudo make clean`一下。
