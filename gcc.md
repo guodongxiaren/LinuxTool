@@ -53,7 +53,7 @@ gcc编译器学习记录
 ###-D
 给编译的源文件传递一个宏。
 ```
-gcc a.c -DHELLO -DWORLD 
+gcc a.c -DHELLO -DWORLD=10 
 ```
 相当于：
 ```c
