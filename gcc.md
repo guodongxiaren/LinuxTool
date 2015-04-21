@@ -50,6 +50,17 @@ gcc编译器学习记录
     gcc -O2 hello.c -o hello
     
 `O`是<kbd>Optimize</kbd>之意。同样还有`O1`，但是优化效果不如`O2`
+###-D
+给编译的源文件传递一个宏。
+```
+gcc a.c -DHELLO -DWORLD 
+```
+相当于：
+```c
+//在a.c中定义了
+#define HELLO
+#define WORLD 10
+```
 ###-E
 gcc -E 指示gcc对源代码进行预处理，结果直接输出到终端。
 >实际上和命令`cpp 源文件`相同。cpp是c预处理器的意思，而非c++的意思。
