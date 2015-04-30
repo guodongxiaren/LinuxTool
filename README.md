@@ -43,7 +43,7 @@ Weapon
 ##系统检测工具
 |名称|描述
 |---|---
-|[tcpdump](tcpdump.md)|
+|[tcpdump](tcpdump.md)|经典的网络抓包工具
 |[ifconfig](ifconfig.md)
 |[lsof](lsof.md)|
 |[nc](nc.md)|
