@@ -60,7 +60,7 @@ main:$(objects)
 |**$?**|依赖文件列表中被改变过的文件
 |VPATH|文件搜索路径
 前4个称为自动化变量
-
+```
 main:main.o getdata.o calc.o putdata.o
     gcc -o $@ $^
 ```
