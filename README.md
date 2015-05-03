@@ -25,7 +25,6 @@ Weapon
 |[grep](grep.md)|常用支持正则表达式的搜索工具|
 |[hexdump](hexdump.md)|十六进制查看器|
 |[make](make.md)|编译C/C++大型程序的make命令
-|[MySQL](mysql.md)|强大的开源跨平台数据库|
 |[sed](sed.md)|Stream Editer常用文本处理工具|
 |[tree](tree.md)|文件的树形结构显示
 |[Vim](vim.md)|Unix/Linux下强大的编辑器|
