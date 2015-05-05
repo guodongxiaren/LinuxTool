@@ -44,7 +44,7 @@ Weapon
 |---|---
 |[tcpdump](tcpdump.md)|经典的网络抓包工具
 |[ifconfig](ifconfig.md)
-|[lsof](lsof.md)|
+|[lsof](lsof.md)|列出系统打开的文件描述符
 |[nc](nc.md)|
 |[starce](starce.md)|
 |[netstat](netstat.md)|网络信息统计工具
