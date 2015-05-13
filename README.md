@@ -50,7 +50,9 @@ Weapon
 |[netstat](netstat.md)|网络信息统计工具
 |[vmstat](vmstat.md)|**实时**输出系统中各种资源的使用情况
 |[ifstat](ifstat.md)|
-|[mpstat](mpstat.md)|
+|[mpstat](mpstat.md)|监测统计每个CPU状态
+|[iostat](iostat.md)|
+
 ##网络服务与工具
 |名称|描述
 |----|----
