@@ -60,3 +60,20 @@ Personal Package Archives，其实就是非官方的源
 ###出现依赖问题的解决办法
     sudo apt-get -f install
 将自动安装依赖文件及要安装的软件
+##更新与升级
+###update
+
+    sudo apt-get update
+更新的是软件包的列表
+###upgrade
+
+    sudo apt-get upgrade
+依据软件包列表将软件更新到最新版本
+###dist-upgrade
+
+    sudo apt-get dist-upgrade
+与`upgrade`基本相同，不同之处是本命令会智能的解决依赖冲突问题。而`upgrade`则不会。
+###do-release-upgrade
+
+    sudo apt-get do-release-upgrade
+发行版升级。貌似只能一代一代的升级，不能直接升级最新版。
