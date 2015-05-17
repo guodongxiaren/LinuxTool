@@ -14,6 +14,11 @@ ssh-keygen -t rsa -C "your@email.com"
 * -t  Type 指的是加密算法的类型，后面跟得是rsa
 * -C  comment 注释，一般是使用你的邮箱地址
 
+###config
+
+    git config --global user.name "用户名"
+    git config --global user.email "邮箱"
+
 ### git add or rm
         git add (filename)
         git rm (filename)
