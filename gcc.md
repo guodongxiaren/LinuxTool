@@ -68,7 +68,10 @@ gcc -E 指示gcc对源代码进行预处理，结果直接输出到终端。
 ###-I
 包含自定义头文件的路径
 ###-S
-生成汇编代码
+生成汇编代码以.s为后缀。  
+默认是**AT&T**汇编语法，加选项**masm=intel**可生成**Intel**语法的汇编。  
+    
+    gcc -S -masm=intel test.c
 
 ##链接
     gcc -o temp temp.c -lm

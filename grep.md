@@ -26,6 +26,11 @@ grep学习笔记
     grep 'a\{2\}' test.txt
 查询出现两次的a的文本。
 ##常用选项
+###-l
+查找文件内容
+
+    grep -l abc file.txt
+查找file.txt文件内容中是否包含abc
 ###-n
 打印行号
 ###-q
