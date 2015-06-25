@@ -18,6 +18,7 @@ ssh-keygen -t rsa -C "your@email.com"
 
     git config --global user.name "用户名"
     git config --global user.email "邮箱"
+    git config --global core.quotepath false
 
 ### git add or rm
         git add (filename)
@@ -341,3 +342,10 @@ origin后面的django指的是远程分支，最后一个参数django是本地�
 要注意的是openssl要先于libcurl编译，因为libcurl在configure阶段需要开启`--with-ssl`选项来指明openssl的路径，否则就无法支持很好地https协议（git pull失败）。
 
 另外openssl的configure阶段要使用`--shared -fPIC`选项使编译生成动态库（`.so`，默认是静态库`.a`），这样才能被libcurl调用。如果之前已经生成过静态库了，重新编译之前要`sudo make clean`一下。
+
+2015/06/25
+==========
+修改终端中git中文的显示方式：
+
+    git config --global core.quotepath false
+这样就不会对`0x80`以上的字符进行quote。能正常显示中文。
