@@ -27,7 +27,7 @@ Weapon
 |[make](make.md)|编译C/C++大型程序的make命令
 |[sed](sed.md)|Stream Editer常用文本处理工具|
 |[tree](tree.md)|文件的树形结构显示
-|[Vim](vim.md)|Unix/Linux下强大的编辑器|
+|[Vim](vim/)|Unix/Linux下强大的编辑器|
 
 ##软件包管理
 - [x] Debian/Ubuntu
