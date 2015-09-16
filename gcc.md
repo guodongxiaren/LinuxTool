@@ -74,14 +74,7 @@ gcc -E 指示gcc对源代码进行预处理，结果直接输出到终端。
     gcc -S -masm=intel test.c
 
 ##链接
-    gcc -o temp temp.c -lm
-**-lm**选项是链接math.h的库。常用的库会自动链接，无需指定。
->数学库的文件可能位*libm-2.1.2.so*去掉lib和后面的版本号就只剩下m了。
 
-如果该库不在系统缺省路径下，还要使用**-L**选项指定。
-    
-    -L/home/jelly/mylib
-系统缺省的库路径为：/lib、/usr/lib、/usr/local/lib。
 ###静态链接库
 静态链接库是后缀名为.a的文件。它有多个后缀为你.o的目标文件组成。
 
@@ -99,6 +92,23 @@ gcc -E 指示gcc对源代码进行预处理，结果直接输出到终端。
     gcc -shared -fPIC -o libvector.so addvec.c multvec.c
     gcc -o p2 main2.c ./libvector.so
 完成了生成.so以及链接.so的操作。<kbd>-fPIC</kbd>指示生成与位置无关的代码。
+###-l
+    gcc -o temp temp.c -lm
+**-lm**选项，在编译时会进入系统库路径搜索，链接“数学库”。常用的库会自动链接，无需指定。  
+系统缺省的库路径为：/lib、/usr/lib、/usr/local/lib、/usr/lib64。
+>数学库的文件可能为*libm-2.1.2.so*去掉lib和后面的版本号就只剩下m了。
+###-L
+如果该库不在系统缺省路径下（比如第三方库，自定义的库），还要使用**-L**选项指定路径。
+    
+    -L/home/jelly/mylib
+###-Wl,-rpath
+**-L**选项指定的是在编译期间库的搜索路径，然而如果是动态库的话，在运行时加载库，此时只会搜索默认库路径。  
+此时需在编译时加上**-Wl,-rpath=**后面指定路径。注意这不是两个选项。
+```
+g++ -I ../include -Wl,-rpath=../util/ -lwang -L../util/  client.c -o client
+```
+另外一种方案是修改配置文件：`/etc/ld.so.conf`。然后需要**ldconfig**命令（root）更新。如果无root权限，请使用上一种方案。
+
 ```
 有时候连接通过，但运行时出错：未定义符号XXX。请查看一下是否正确保护库的路径，如果确认无误，仍有错。
 
