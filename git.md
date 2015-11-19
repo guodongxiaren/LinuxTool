@@ -349,3 +349,15 @@ origin后面的django指的是远程分支，最后一个参数django是本地�
 
     git config --global core.quotepath false
 这样就不会对`0x80`以上的字符进行quote。能正常显示中文。
+
+2015/11/19
+==========
+修改默认push/pull规则。默认有两个规则：
+- Matching： 推送当前所有分支到remote
+- Simple： 只推送当前分支到remote
+
+命令如下：
+```
+git config --global push.default matching
+git config --global push.default simple
+```
