@@ -322,7 +322,9 @@ origin后面的django指的是远程分支，最后一个参数django是本地�
 则会出现问题，提示你要暂存改动，如果你不想暂存，想用云端的文件覆盖掉本地的文件，
 则需要丢弃工作区改动：
 
-    git checkout -- 要丢弃改动的文件名
+    git checkout 要丢弃改动的文件名
+    git checkout ddl.sql
+    
 ##把本地分支同步到remote
     git push -u origin test
 上面命令将当前本地分支，推送到远端的test分支，并建立关联。
