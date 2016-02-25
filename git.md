@@ -363,3 +363,9 @@ origin后面的django指的是远程分支，最后一个参数django是本地�
 git config --global push.default matching
 git config --global push.default simple
 ```
+2016/02/25
+===========
+克隆指定分支的文件。
+```
+git clone -b 分支名 远端URL
+```
