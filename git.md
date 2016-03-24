@@ -369,3 +369,13 @@ git config --global push.default simple
 ```
 git clone -b 分支名 远端URL
 ```
+
+2016/03/24
+============
+孤儿分支，开启新历史  
+如果你想抛弃所有的git历史纪录，你可以创建一个孤儿分支，它不继承自任何父分支。而是重新开启一段git历史记录。
+它不会丢失之前的文件，你只需要重新把它们commit一次。例如：
+```
+git checkout --orpha gh-pages
+```
+上述命令创建了一个分支`gh-pages`，注意！原始分支`master`将消失。
