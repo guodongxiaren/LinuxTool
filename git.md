@@ -378,4 +378,5 @@ git clone -b 分支名 远端URL
 ```
 git checkout --orpha gh-pages
 ```
-上述命令创建了一个分支`gh-pages`，注意！原始分支`master`将消失。
+上述命令创建了一个分支`gh-pages`。
+>如果原始分支master是空的，那么gh-pages分支创建后，master分支将消失。如果master不空，那么不消失。
