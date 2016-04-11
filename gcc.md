@@ -49,7 +49,7 @@ gcc编译器学习记录
 
     gcc -O2 hello.c -o hello
     
-`O`是<kbd>Optimize</kbd>之意。同样还有`O1`，但是优化效果不如`O2`
+`O`是<kbd>Optimize</kbd>之意。同样还有`O1`，但是优化效果不如`O2`，缺省是`O0`
 ###-D
 给编译的源文件传递一个宏。
 ```
@@ -132,3 +132,10 @@ g++ -I ../include -Wl,-rpath=../util/ -lwang -L../util/  client.c -o client
 
 以makefile风格显示源文件的依赖关系。会列出所有包含的所有头文件。会列出标准库的头文件。
 如果不想显示标准库的头文件，请使用**-MM**选项代替**-M**。
+
+##其他
+###-fno-elide-constructors
+适用于g++。C++语言因为各种临时对象的问题，所以编译器通常会自行进行优化，比如**NRV**优化（O0已存在该优化），会减少几次拷贝构造函数的调用过程。如果你想关闭这个优化：
+
+	g++ -fno-elide-constructors hello.cpp
+
