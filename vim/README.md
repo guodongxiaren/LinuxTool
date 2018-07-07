@@ -16,4 +16,4 @@ Vim的命令区分大小写!大部分命令能和数字组合使用，此时数�
 - 本文组合键中间无空格。
 
 ## 授人以渔
->>在终端输入`vimtutor`可以进入vim使用教程。在vim编辑器中输入`:help vimrc-intro`可以进入vimrc文件的编辑教程
+在终端输入`vimtutor`可以进入vim使用教程。在vim编辑器中输入`:help vimrc-intro`可以进入vimrc文件的编辑教程
