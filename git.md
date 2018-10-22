@@ -388,3 +388,11 @@ git checkout --orpha gh-pages
 - 本地执行`git push -u origin :master`（冒号前空格）
 
 注意执行顺序。
+
+2018/10/22
+========
+```
+git push origin HEAD:refs/for/master
+```
+这个命令会将代码推送到云端，但是不会直接在云端的master分支生效，表示需要经过code review才能生效。
+企业内部为了规范代码的提交，常常使用
