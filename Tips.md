@@ -65,6 +65,19 @@ sudo !!
 ### !foo与!?foo
 !foo执行以foo开头的命令  
 !?foo执行包含foo的命令
+```shell
+git status
+
+git add .
+
+﻿!g 
+
+#引用倒数第一个g开头的命令，即git add .
+
+﻿!?sta
+
+#引用倒数第一个包含sta的命令，即git status
+```
 ### !n
 使用!n执行第n个命令。
 n可以是负数，即倒数第几个命令
