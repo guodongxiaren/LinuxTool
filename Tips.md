@@ -27,7 +27,7 @@ root是Linux下最高权限的用户，类似Windows下的管理员administer。
 
 |组合键|描述|
 |------|-----
-|Ctrl+Z|发送susp信号，暂停当前程序，丢入后台运行
+|Ctrl+Z|发送susp信号，暂停当前程序，丢入后台
 |Ctrl+C|发送intr信号终止当前程序
 |Ctrl+D|发送EOF信号
 |Ctrl+L|清屏
@@ -39,6 +39,7 @@ root是Linux下最高权限的用户，类似Windows下的管理员administer。
 |Ctrl+S|发送stop信号，暂停屏幕输出
 |Ctrl+Q|发送start信号，恢复屏幕输出
 >所有的Ctrl键都可以通过键入^字符来代替。
+>Ctrl+Z可以使用【fg命令】恢复到当前终端允许，或者使用【bg命令】让其脱离终端在后台运行
 >Ctrl+S只是暂停输出，但并不暂停程序运行
 
 ## ^
