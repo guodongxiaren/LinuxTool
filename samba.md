@@ -7,10 +7,10 @@ smb.conf文件
 ------------
 ubuntu/red hat下都是在`/etc/samba/smb.conf`。
 其他发行版位置可能不同，但都叫做`smb.conf`。
-###注释
+### 注释
 注释分两种。
-`#`开始的行，是samba的描述。`;`开始的行是有效设置行，只是当前不启用，用`;`注释掉。
-###设置段
+`# `开始的行，是samba的描述。`;`开始的行是有效设置行，只是当前不启用，用`;`注释掉。
+### 设置段
 |设置段|描述|
 |------|------|
 |[global]|设置全局环境变量选项|
@@ -18,7 +18,7 @@ ubuntu/red hat下都是在`/etc/samba/smb.conf`。
 |[printers]|设置打印机共享|
 |[sharefiles]|设置文件共享|
 
-####global
+#### global
 * **workgroup** 指定工作组或域
 * **server string** 描述
 * **security** 指定安全模式

@@ -1,6 +1,6 @@
 系统管理
 ========
-##df
+## df
 df命令 报告磁盘上文件系统的挂载情况。
 >>df为disk和filesystem之意
 
@@ -17,8 +17,8 @@ df命令 报告磁盘上文件系统的挂载情况。
     /dev/sda7         274407   93785   161934   37% /boot
     /dev/sda9       78689200 4145188 70523788    6% /home
 
-##dumpe2fs
+## dumpe2fs
 显示 ext2/ext3/ext4 文件系统的信息
 
-###dumpe2fs /dev/sda8
+### dumpe2fs /dev/sda8
 

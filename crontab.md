@@ -1,6 +1,6 @@
 crontab计划任务
 ============
-##安装启动
+## 安装启动
 CentOS下：
 
 	yum install vixie-cron
@@ -9,16 +9,16 @@ CentOS下：
   
 	service crond start
 要启动该服务才行。
-##系统级crontab
+## 系统级crontab
 用ls /etc/cron然后敲两下TAB，可以看到相关文件及目录。
 
     cron.d/     cron.daily/   cron.hourly/  cron.monthly/ crontab   cron.weekly/
-###文件及目录解读
+### 文件及目录解读
 我们可以编辑crontab文件，来创建计划任务。 
 而以daily，hourly，weekly，monthly后缀的目录下分别存放每天，每月，每周，每月执行的任务。  
 其中存放的就是Shell脚本文件。权限755。  
 而不规则周期的计划任务放在corn.d目录下面。可以看做是crontab文件的补充。
-###crontab文件格式
+### crontab文件格式
 该文件开头包含必要的环境变量，不再介绍。  
 具体写法直接看源文件注释：
 ```
@@ -40,8 +40,8 @@ CentOS下：
 该文件中如果出现%要进行转义，比如date +%w 在该文件内编写的时候要写成date +\%w   
 把分钟设置成`*`要慎重
 
-##crontab命令（用户级）
-###命令选项
+## crontab命令（用户级）
+### 命令选项
     crontab [-u user] file
     crontab [-u user] [-e|-l|-r]
 
@@ -58,9 +58,9 @@ s选项不常用。
 所以你也可以直接编辑该文件。
 守护进程crond每分钟会读取该文件一次。
 
-###编写格式。
+### 编写格式。
 格式与前文中crontab文件的编写格式相仿，但是没有用户user-name字段。
 因为该命令只能编写当前用户的计划任务。
-##日志
+## 日志
 在`/var/log/cron`下面可以看到全部日志。  
 而`/var/spool/cron/`在下面也可以看到一定的日志。 
