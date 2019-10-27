@@ -396,3 +396,11 @@ git push origin HEAD:refs/for/master
 ```
 这个命令会将代码推送到云端，但是不会直接在云端的master分支生效，表示需要经过code review才能生效。
 企业内部为了规范代码的提交，常常使用
+
+2019
+=======
+## 保持git log的时间线线性！
+在工作中，多人写作开发一个项目的时候，难免存在其他人更新了master代码的情况。这时候我，如果们直接git pull则会自动产生一个merge记录，在git log里。通常merge log是不友好的，会给代码回溯，代码review带来一些麻烦。企业内部一般鼓励保持git log时间线的线性，所谓线性就是不含有merge记录。应该在pull代码的时候进行如下操作：
+要使用`git pull --rebase`代替`git pull`，这个操作称之为『变基』。没冲突则自动成功，把你的commit调整到master最后一个commit之后。如果有冲突，此时会出现一个临时分支，并且会自动切到该分支下。像平常一样修改代码解决冲突，然后git add修改的文件，此时不要`git commit --amend`。而是使用`git rebase --continue`。则会回到master分支，并且将时间线调整成线性。
+
+如果你已经误操作了`git pull`，并且自动出现了merge记录也有补救措施，就是`git reset --soft`软重置到你commit的时间点。然后重新执行`git pull --rebase`，进行正确的操作，由于是软重置，本地代码改动未丢失，基本上不会再大量改动冲突文件，当然可能也会报冲突，不过打开文件，你会发现：`<<<===`中间是空的，直接删除冲突标记行就可以。
